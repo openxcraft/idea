@@ -1,0 +1,36 @@
+# ============================================================
+# Base taxonomy — general topic tags for idea files.
+# The diversity matrices in tags/diversity_matrices.yaml are
+# controlled vocabularies that extend this file. Every idea
+# carries >= 3 tags from here plus one value from each matrix.
+# ============================================================
+
+version: 1
+
+tag_policy:
+  min_tags_per_idea: 3
+  source: tags/taxonomy.yaml
+  free_form_allowed: false          # every tag must exist in a domain below
+
+domains:
+  systems: [memory-management, concurrency, schedulers, allocators, drivers, firmware, boot, kernel, containers, virtualization]
+  networking: [tcp, quic, tls, dns, vpn, mesh, p2p, gossip, routing, proxy, cdn, websocket, delay-tolerant]
+  security: [crypto-shredding, key-management, authn, authz, secrets, sandboxing, attestation, hardening, exploit-mitigation]
+  privacy: [anonymity, metadata-minimization, cover-traffic, e2ee, zero-knowledge, traffic-analysis-resistance]
+  data: [storage-engines, wal, indexing, query-planning, etl, pipelines, streaming, dedup, compression, provenance]
+  developer-tools: [linting, formatting, build, ci, debugging, profiling, testing, fuzzing, code-navigation, repl, observability]
+  ai: [agents, inference, training, evals, guardrails, dataset-tooling, prompt-engineering, ai-egress]
+  web: [spa, ssr, static-sites, browsers, extensions, wasm, accessibility-web]
+  mobile: [ios, android, offline-sync, background-tasks]
+  education: [tutoring, visualization, step-by-step, curriculum, assessment]
+  science: [simulation, numerical-methods, reproducibility, lab-tooling, datasets]
+  hardware: [mcu, fpga, sensors, actuators, rtos, power, ble, i2c, spi]
+  media: [audio, video, image, codecs, synthesis, narration, captions]
+  text: [nlp, parsing, diffing, search, summarization, translation]
+  infrastructure: [orchestration, provisioning, backup, disaster-recovery, edge-compute, serverless]
+  finance: [payments, ledger, reconciliation, compliance]
+  health: [clinical-data, wearables-integration, privacy-preserving-health]
+  accessibility: [screen-reader, narration, input-methods, low-vision, motor-accessibility]
+  gaming: [engines, physics, netcode, procedural-generation]
+  sustainability: [energy-measurement, carbon-accounting, e-waste]
+  governance: [voting, deliberation, transparency, audit-trails]

@@ -1,0 +1,73 @@
+{
+  "meta": {
+    "nodes": 5,
+    "edges": 0,
+    "updated_at": "2026-10-29T17:15:09Z"
+  },
+  "nodes": [
+    {
+      "id": "calm-type",
+      "tags": [
+        "visualization",
+        "step-by-step",
+        "repl",
+        "browsers"
+      ],
+      "layer": "runtime",
+      "language": "typescript",
+      "cell": "web|interpreter|education|runtime"
+    },
+    {
+      "id": "coldstash",
+      "tags": [
+        "storage-engines",
+        "wal",
+        "crypto-shredding",
+        "key-management",
+        "provenance"
+      ],
+      "layer": "service",
+      "language": "python",
+      "cell": "server_backend|storage_engine|data_engineering|service"
+    },
+    {
+      "id": "fragment-trace",
+      "tags": [
+        "mcu",
+        "profiling",
+        "memory-management",
+        "rtos",
+        "power"
+      ],
+      "layer": "library",
+      "language": "rust",
+      "cell": "embedded_mcu|profiler|observability|library"
+    },
+    {
+      "id": "quorum-mesh",
+      "tags": [
+        "p2p",
+        "gossip",
+        "delay-tolerant",
+        "ble",
+        "traffic-analysis-resistance"
+      ],
+      "layer": "protocol",
+      "language": "elixir",
+      "cell": "protocol_daemon|p2p_node|censorship_resistance|protocol"
+    },
+    {
+      "id": "speak-diff",
+      "tags": [
+        "narration",
+        "screen-reader",
+        "diffing",
+        "hardening"
+      ],
+      "layer": "application",
+      "language": "csharp",
+      "cell": "cli|tool|accessibility|application"
+    }
+  ],
+  "edges": []
+}

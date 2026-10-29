@@ -1,0 +1,377 @@
+{
+  "run_id": "seed-001",
+  "started_at": "2026-10-29T17:15:09Z",
+  "corpus_size_before": 0,
+  "corpus_size_after": 5,
+  "budget": 10,
+  "digest_mode": "rich",
+  "diversity": {
+    "max_share_per_value": 0.2,
+    "min_distinct_stacks": 5,
+    "min_distinct_threat_models": 3,
+    "min_distinct_layers": 4,
+    "require_one_per_layer_when_budget_allows": true,
+    "forbid_wrapper_only": true,
+    "forbid_rename_only": true,
+    "coverage_bias": true,
+    "report_uncovered_cells": true,
+    "matrices_file": "tags/diversity_matrices.yaml",
+    "coverage_report_path": "memory/coverage_report.json",
+    "quota_reconciliation": "balanced_relaxation"
+  },
+  "targeted_cells": [
+    {
+      "cell": [
+        "cli",
+        "end_user_app",
+        "automation",
+        "application"
+      ],
+      "deficit_score": 0.189,
+      "rationale": "under-represented cell (deficit 0.189)"
+    },
+    {
+      "cell": [
+        "cli",
+        "end_user_app",
+        "automation",
+        "framework"
+      ],
+      "deficit_score": 0.189,
+      "rationale": "under-represented cell (deficit 0.189)"
+    },
+    {
+      "cell": [
+        "cli",
+        "end_user_app",
+        "automation",
+        "library"
+      ],
+      "deficit_score": 0.189,
+      "rationale": "under-represented cell (deficit 0.189)"
+    },
+    {
+      "cell": [
+        "cli",
+        "end_user_app",
+        "automation",
+        "service"
+      ],
+      "deficit_score": 0.189,
+      "rationale": "under-represented cell (deficit 0.189)"
+    },
+    {
+      "cell": [
+        "cli",
+        "end_user_app",
+        "collaboration",
+        "application"
+      ],
+      "deficit_score": 0.189,
+      "rationale": "under-represented cell (deficit 0.189)"
+    }
+  ],
+  "accepted": [
+    {
+      "id": "calm-type",
+      "title": "calm-type — a step-by-step type-inference visualizer for teaching Hindley-Milner",
+      "path": "seed-001-calm-type.md",
+      "hash": "3207a651d351eb3ee765a4d42269132ebdac37dcb862b42bffef33a164b7d94f",
+      "cell": "web|interpreter|education|runtime"
+    },
+    {
+      "id": "coldstash",
+      "title": "coldstash — a crypto-shredding cold-storage engine with per-tenant deletion proofs",
+      "path": "seed-001-coldstash.md",
+      "hash": "78a5107219022467854b87bbc1284e24ac198b8c685f4c59517e54dc63c407c8",
+      "cell": "server_backend|storage_engine|data_engineering|service"
+    },
+    {
+      "id": "fragment-trace",
+      "title": "fragment-trace — no_std heap-fragmentation profiler for bare-metal Rust",
+      "path": "seed-001-fragment-trace.md",
+      "hash": "14b25d119ab247e3bed87518a7c9fd72bb7f0e2fe10030dd96dfb170a4e6b22b",
+      "cell": "embedded_mcu|profiler|observability|library"
+    },
+    {
+      "id": "quorum-mesh",
+      "title": "quorum-mesh — store-carry-forward gossip daemon for off-internet neighborhoods",
+      "path": "seed-001-quorum-mesh.md",
+      "hash": "1f948abe8121a9b0ccd765f8fb72bbe993a9b775f267f180ab26535b2e58ce36",
+      "cell": "protocol_daemon|p2p_node|censorship_resistance|protocol"
+    },
+    {
+      "id": "speak-diff",
+      "title": "speak-diff — a narrating CLI that makes code review audible for blind developers",
+      "path": "seed-001-speak-diff.md",
+      "hash": "46f0d97a136a0a3e76bb4e4fc803a16846551b2342b39ebd0ed9d5b51746a97c",
+      "cell": "cli|tool|accessibility|application"
+    }
+  ],
+  "rejected": [],
+  "quota": {
+    "run_value_counts": {
+      "platform": {
+        "web": 1,
+        "server_backend": 1,
+        "embedded_mcu": 1,
+        "protocol_daemon": 1,
+        "cli": 1
+      },
+      "software_class": {
+        "interpreter": 1,
+        "storage_engine": 1,
+        "profiler": 1,
+        "p2p_node": 1,
+        "tool": 1
+      },
+      "solution_category": {
+        "education": 1,
+        "data_engineering": 1,
+        "observability": 1,
+        "censorship_resistance": 1,
+        "accessibility": 1
+      },
+      "architecture": {
+        "offline_first": 1,
+        "event_driven": 1,
+        "library_only": 1,
+        "p2p": 1,
+        "single_user_local": 1
+      },
+      "scale": {
+        "small_team": 1,
+        "org_wide": 1,
+        "solo_dev": 2,
+        "internet_scale": 1
+      },
+      "language": {
+        "typescript": 1,
+        "python": 1,
+        "rust": 1,
+        "elixir": 1,
+        "csharp": 1
+      },
+      "stack": {
+        "js_ts": 1,
+        "scripting": 1,
+        "systems": 1,
+        "functional": 1,
+        "dotnet": 1
+      },
+      "layer": {
+        "runtime": 1,
+        "service": 1,
+        "library": 1,
+        "protocol": 1,
+        "application": 1
+      },
+      "threat_model": {
+        "malicious_server": 1,
+        "insider": 1,
+        "coerced_disclosure": 1,
+        "side_channel_observer": 1,
+        "passive_network_observer": 1,
+        "active_mitm": 1,
+        "mass_surveillance": 1,
+        "supply_chain_attacker": 1
+      }
+    },
+    "run_minimums": {
+      "min_distinct_stacks": {
+        "actual": 5,
+        "required": 5,
+        "status": "ok"
+      },
+      "min_distinct_threat_models": {
+        "actual": 8,
+        "required": 3,
+        "status": "ok"
+      },
+      "min_distinct_layers": {
+        "actual": 5,
+        "required": 4,
+        "status": "ok"
+      }
+    },
+    "reconciliation": [
+      "scale: strict cap infeasible (4 values); balanced cap ceil(n/values) applied"
+    ]
+  },
+  "rolling_window": {
+    "window_size": 5,
+    "uncovered_values": {
+      "platform": [
+        "desktop",
+        "mobile",
+        "tui",
+        "browser_extension",
+        "ide_extension",
+        "editor_plugin",
+        "cloud_service",
+        "serverless_function",
+        "edge_runtime",
+        "iot",
+        "wearables",
+        "smart_tv",
+        "automotive",
+        "robotics",
+        "ar_vr_xr",
+        "game_console",
+        "kernel_driver",
+        "bootloader",
+        "firmware",
+        "container_image",
+        "wasm_module"
+      ],
+      "software_class": [
+        "end_user_app",
+        "library",
+        "framework",
+        "sdk",
+        "api",
+        "microservice",
+        "monolith",
+        "plugin",
+        "protocol_spec",
+        "compiler",
+        "transpiler",
+        "linter",
+        "formatter",
+        "package_manager",
+        "database",
+        "cache",
+        "queue",
+        "scheduler",
+        "orchestrator",
+        "runtime",
+        "emulator",
+        "simulator",
+        "game",
+        "dev_tool",
+        "test_harness",
+        "fuzzer",
+        "debugger",
+        "observability_agent",
+        "ml_model",
+        "ml_pipeline",
+        "autonomous_agent",
+        "scraper",
+        "crawler",
+        "dapp",
+        "smart_contract",
+        "mesh_node",
+        "cryptographic_primitive",
+        "consensus_module",
+        "identity_system",
+        "payment_rail",
+        "filesystem",
+        "network_stack",
+        "build_system",
+        "ci_cd_component"
+      ],
+      "solution_category": [
+        "automation",
+        "productivity",
+        "communication",
+        "collaboration",
+        "security",
+        "privacy",
+        "anonymity",
+        "data_leak_prevention",
+        "ai_egress_control",
+        "content_moderation",
+        "media_processing",
+        "generative_tooling",
+        "research_tooling",
+        "scientific_computing",
+        "health",
+        "finance",
+        "commerce",
+        "logistics",
+        "governance",
+        "legal_tech",
+        "infrastructure",
+        "resilience_backup",
+        "offline_first",
+        "low_resource_edge_compute",
+        "sustainability",
+        "creative_tools",
+        "gaming",
+        "simulation"
+      ],
+      "architecture": [
+        "single_tenant_server",
+        "multi_tenant_saas",
+        "self_hosted",
+        "federated",
+        "decentralized",
+        "sync_based",
+        "stream_processing",
+        "batch",
+        "real_time",
+        "embedded_in_another_app",
+        "protocol_first",
+        "hardware_paired"
+      ],
+      "scale": [],
+      "language": [
+        "c",
+        "cpp",
+        "zig",
+        "go",
+        "java",
+        "kotlin",
+        "scala",
+        "fsharp",
+        "ruby",
+        "php",
+        "lua",
+        "javascript",
+        "node",
+        "deno",
+        "bun",
+        "haskell",
+        "ocaml",
+        "clojure",
+        "swift",
+        "kotlin_android",
+        "dart",
+        "sql",
+        "r_lang",
+        "julia",
+        "fortran",
+        "matlab",
+        "solidity",
+        "move",
+        "bash",
+        "posix_shell",
+        "other"
+      ],
+      "stack": [
+        "jvm",
+        "mobile_native",
+        "data",
+        "scientific",
+        "blockchain",
+        "shell",
+        "other"
+      ],
+      "layer": [
+        "framework",
+        "kernel_driver",
+        "firmware",
+        "spec_standard",
+        "research_prototype"
+      ],
+      "threat_model": [
+        "malicious_client",
+        "compromised_endpoint",
+        "physical_access_attacker",
+        "targeted_surveillance"
+      ]
+    },
+    "status": "non_compliant"
+  },
+  "push_results": null
+}

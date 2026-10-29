@@ -1,0 +1,126 @@
+{
+  "meta": {
+    "note": "EXAMPLE ONLY — hypothetical 1,000-idea corpus (addendum deliverable 5). The live report is regenerated after every run at memory/coverage_report.json.",
+    "corpus_size": 1000,
+    "window": { "size": 100, "definition": "last 10 x max_ideas_per_run accepted ideas" },
+    "generated_at": "2026-10-29T18:00:00Z",
+    "run_id": "example-hypothetical"
+  },
+  "per_axis": {
+    "platform": {
+      "counts": { "web": 195, "cli": 143, "server_backend": 132, "desktop": 101, "mobile": 72, "embedded_mcu": 43, "browser_extension": 38, "tui": 35, "iot": 29, "cloud_service": 26, "serverless_function": 21, "edge_runtime": 19, "ide_extension": 18, "editor_plugin": 16, "container_image": 15, "wasm_module": 14, "ar_vr_xr": 13, "robotics": 12, "game_console": 11, "wearables": 10, "smart_tv": 9, "automotive": 8, "protocol_daemon": 7, "firmware": 6, "kernel_driver": 5, "bootloader": 2 },
+      "entropy_bits": 3.42,
+      "max_entropy_bits": 4.70,
+      "uniform_share": 0.038,
+      "max_share": { "value": "web", "share": 0.195 },
+      "uncovered_values": []
+    },
+    "software_class": {
+      "counts": { "library": 132, "tool": 127, "end_user_app": 106, "dev_tool": 84, "api": 52, "framework": 51, "microservice": 48, "database": 36, "interpreter": 32, "compiler": 28, "game": 27, "plugin": 26, "protocol_spec": 25, "ml_pipeline": 14, "ml_model": 13, "scraper": 12, "autonomous_agent": 12, "crawler": 11, "sdk": 10, "monolith": 9, "runtime": 9, "queue": 8, "scheduler": 8, "cache": 8, "storage_engine": 7, "p2p_node": 7, "consensus_module": 6, "cryptographic_primitive": 6, "identity_system": 6, "payment_rail": 5, "filesystem": 5, "network_stack": 5, "orchestrator": 5, "emulator": 4, "simulator": 4, "linter": 4, "formatter": 4, "package_manager": 4, "build_system": 4, "ci_cd_component": 4, "test_harness": 4, "fuzzer": 4, "profiler": 4, "debugger": 4, "observability_agent": 4, "transpiler": 3, "smart_contract": 3, "dapp": 3, "mesh_node": 3 },
+      "entropy_bits": 4.06,
+      "max_entropy_bits": 5.61,
+      "uniform_share": 0.020,
+      "max_share": { "value": "library", "share": 0.132 },
+      "uncovered_values": []
+    },
+    "solution_category": {
+      "counts": { "automation": 98, "productivity": 82, "education": 60, "security": 56, "data_engineering": 52, "creative_tools": 44, "observability": 40, "accessibility": 38, "finance": 36, "privacy": 34, "health": 33, "infrastructure": 32, "collaboration": 31, "communication": 30, "media_processing": 28, "generative_tooling": 27, "gaming": 26, "research_tooling": 25, "anonymity": 24, "censorship_resistance": 22, "legal_tech": 20, "commerce": 19, "logistics": 18, "governance": 17, "resilience_backup": 16, "offline_first": 15, "scientific_computing": 14, "content_moderation": 13, "data_leak_prevention": 12, "ai_egress_control": 11, "low_resource_edge_compute": 10, "sustainability": 9, "simulation": 8 },
+      "entropy_bits": 4.78,
+      "max_entropy_bits": 5.04,
+      "uniform_share": 0.030,
+      "max_share": { "value": "automation", "share": 0.098 },
+      "uncovered_values": []
+    },
+    "architecture": {
+      "counts": { "single_user_local": 130, "event_driven": 102, "self_hosted": 98, "library_only": 96, "single_tenant_server": 80, "p2p": 62, "offline_first": 58, "real_time": 54, "multi_tenant_saas": 52, "decentralized": 46, "protocol_first": 42, "sync_based": 38, "embedded_in_another_app": 34, "batch": 30, "federated": 28, "stream_processing": 26, "hardware_paired": 24 },
+      "entropy_bits": 3.94,
+      "max_entropy_bits": 4.09,
+      "uniform_share": 0.059,
+      "max_share": { "value": "single_user_local", "share": 0.130 },
+      "uncovered_values": []
+    },
+    "scale": {
+      "counts": { "solo_dev": 392, "small_team": 331, "org_wide": 174, "internet_scale": 103 },
+      "entropy_bits": 1.78,
+      "max_entropy_bits": 2.00,
+      "uniform_share": 0.25,
+      "max_share": { "value": "solo_dev", "share": 0.392 },
+      "uncovered_values": [],
+      "note": "4 values < 1/max_share_per_value — balanced_relaxation applies to this matrix at run time"
+    },
+    "language": {
+      "counts": { "python": 133, "typescript": 106, "rust": 102, "go": 92, "javascript": 52, "c": 55, "cpp": 49, "java": 38, "kotlin": 31, "csharp": 30, "elixir": 24, "haskell": 22, "node": 22, "lua": 20, "ruby": 18, "swift": 18, "dart": 16, "php": 16, "bash": 14, "scala": 14, "fsharp": 12, "ocaml": 12, "sql": 12, "zig": 10, "r_lang": 10, "julia": 9, "fortran": 8, "posix_shell": 8, "matlab": 7, "solidity": 6, "deno": 6, "move": 5, "bun": 5, "kotlin_android": 4, "other": 3 },
+      "entropy_bits": 4.55,
+      "max_entropy_bits": 5.17,
+      "uniform_share": 0.028,
+      "max_share": { "value": "python", "share": 0.133 },
+      "uncovered_values": []
+    },
+    "stack": {
+      "counts": { "systems": 301, "js_ts": 197, "scripting": 181, "jvm": 90, "functional": 69, "dotnet": 42, "mobile_native": 38, "data": 31, "shell": 22, "scientific": 15, "blockchain": 11, "other": 3 },
+      "entropy_bits": 2.62,
+      "max_entropy_bits": 3.58,
+      "uniform_share": 0.083,
+      "max_share": { "value": "systems", "share": 0.301 },
+      "uncovered_values": []
+    },
+    "layer": {
+      "counts": { "application": 232, "library": 198, "service": 154, "framework": 92, "protocol": 76, "runtime": 58, "firmware": 62, "kernel_driver": 43, "spec_standard": 45, "research_prototype": 40 },
+      "entropy_bits": 2.91,
+      "max_entropy_bits": 3.32,
+      "uniform_share": 0.100,
+      "max_share": { "value": "application", "share": 0.232 },
+      "uncovered_values": []
+    },
+    "threat_model": {
+      "counts": { "passive_network_observer": 384, "supply_chain_attacker": 296, "malicious_server": 251, "active_mitm": 213, "compromised_endpoint": 187, "insider": 142, "mass_surveillance": 128, "targeted_surveillance": 96, "physical_access_attacker": 73, "side_channel_observer": 58, "coerced_disclosure": 41, "malicious_client": 33 },
+      "total_mentions": 1802,
+      "avg_per_idea": 1.8,
+      "entropy_bits": 3.38,
+      "max_entropy_bits": 3.58,
+      "uncovered_values": []
+    }
+  },
+  "cells": {
+    "definition": "platform x software_class x solution_category x layer",
+    "distinct_cells_observed": 3184,
+    "theoretical_cells": 26 * 49 * 33 * 10,
+    "top_over_represented": [
+      { "cell": ["web", "tool", "automation", "application"], "count": 47, "share_of_corpus": 0.047 },
+      { "cell": ["cli", "dev_tool", "productivity", "application"], "count": 39, "share_of_corpus": 0.039 },
+      { "cell": ["server_backend", "api", "data_engineering", "service"], "count": 31, "share_of_corpus": 0.031 },
+      { "cell": ["web", "end_user_app", "education", "application"], "count": 24, "share_of_corpus": 0.024 },
+      { "cell": ["server_backend", "library", "infrastructure", "library"], "count": 21, "share_of_corpus": 0.021 }
+    ],
+    "top_under_represented": [
+      { "cell": ["bootloader", "ci_cd_component", "legal_tech", "spec_standard"], "count": 0, "deficit_score": 3.2 },
+      { "cell": ["game_console", "test_harness", "governance", "firmware"], "count": 0, "deficit_score": 3.1 },
+      { "cell": ["automotive", "consensus_module", "sustainability", "kernel_driver"], "count": 0, "deficit_score": 3.0 },
+      { "cell": ["smart_tv", "smart_contract", "anonymity", "protocol"], "count": 0, "deficit_score": 2.9 },
+      { "cell": ["wearables", "fuzzer", "scientific_computing", "research_prototype"], "count": 0, "deficit_score": 2.9 }
+    ]
+  },
+  "rolling_window": {
+    "window_size": 100,
+    "status": "non_compliant",
+    "uncovered_values": {
+      "platform": ["bootloader", "game_console", "automotive", "smart_tv", "ar_vr_xr"],
+      "software_class": ["smart_contract", "dapp", "transpiler", "mesh_node", "payment_rail"],
+      "solution_category": ["legal_tech", "sustainability", "governance", "logistics"],
+      "architecture": ["federated", "hardware_paired", "batch", "stream_processing"],
+      "scale": [],
+      "language": ["fortran", "matlab", "move", "julia", "solidity"],
+      "stack": ["scientific", "blockchain"],
+      "layer": ["spec_standard", "kernel_driver"],
+      "threat_model": ["physical_access_attacker", "side_channel_observer", "coerced_disclosure"]
+    },
+    "justifications": [
+      "scale: 4 values, all present in window (balanced_relaxation satisfied)",
+      "blockloader/kernel_driver and scientific/blockchain stacks require hardware or domain expertise; next runs must target them via coverage_bias"
+    ]
+  },
+  "quota_compliance": {
+    "max_share_per_value": { "run_scoped": true, "status": "enforced per run; corpus-level shares shown above for drift tracking" },
+    "notes": "Corpus-level max shares (web 19.5%, python 13.3%) exceed the per-run 20% cap? no — per-run cap applies to each run's 10 ideas, so corpus drift is gradual; coverage_bias counterweights it."
+  }
+}

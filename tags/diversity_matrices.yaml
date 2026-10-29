@@ -1,0 +1,250 @@
+# ============================================================
+# Cross-Domain Diversity Generator — controlled vocabularies
+# (addendum deliverable 1). Extends tags/taxonomy.yaml.
+# Every idea must carry exactly one value from each single-
+# value matrix, and >= 1 value from threat_model. The queen
+# must not draw more than diversity.max_share_per_value of a
+# run's ideas from any single value in any matrix (with the
+# balanced_relaxation rule for small matrices, see config.yaml).
+# ============================================================
+
+version: 1
+
+platform:
+  values:
+    - { id: desktop, display: "Desktop", variants: [windows, macos, linux] }
+    - { id: mobile, display: "Mobile", variants: [ios, android] }
+    - { id: web, display: "Web", variants: [spa, ssr, static] }
+    - { id: cli, display: "CLI" }
+    - { id: tui, display: "TUI" }
+    - { id: browser_extension, display: "Browser extension" }
+    - { id: ide_extension, display: "IDE extension" }
+    - { id: editor_plugin, display: "Editor plugin" }
+    - { id: server_backend, display: "Server / backend" }
+    - { id: cloud_service, display: "Cloud service" }
+    - { id: serverless_function, display: "Serverless function" }
+    - { id: edge_runtime, display: "Edge runtime" }
+    - { id: embedded_mcu, display: "Embedded / MCU" }
+    - { id: iot, display: "IoT" }
+    - { id: wearables, display: "Wearables" }
+    - { id: smart_tv, display: "Smart TV" }
+    - { id: automotive, display: "Automotive" }
+    - { id: robotics, display: "Robotics" }
+    - { id: ar_vr_xr, display: "AR / VR / XR" }
+    - { id: game_console, display: "Game console" }
+    - { id: kernel_driver, display: "Kernel / driver" }
+    - { id: bootloader, display: "Bootloader" }
+    - { id: firmware, display: "Firmware" }
+    - { id: protocol_daemon, display: "Protocol daemon" }
+    - { id: container_image, display: "Container image" }
+    - { id: wasm_module, display: "WASM module" }
+
+software_class:
+  values:
+    - { id: end_user_app, display: "End-user app" }
+    - { id: library, display: "Library" }
+    - { id: framework, display: "Framework" }
+    - { id: sdk, display: "SDK" }
+    - { id: api, display: "API" }
+    - { id: microservice, display: "Microservice" }
+    - { id: monolith, display: "Monolith" }
+    - { id: plugin, display: "Plugin" }
+    - { id: protocol_spec, display: "Protocol / spec" }
+    - { id: compiler, display: "Compiler" }
+    - { id: interpreter, display: "Interpreter" }
+    - { id: transpiler, display: "Transpiler" }
+    - { id: linter, display: "Linter" }
+    - { id: formatter, display: "Formatter" }
+    - { id: package_manager, display: "Package manager" }
+    - { id: database, display: "Database" }
+    - { id: storage_engine, display: "Storage engine" }
+    - { id: cache, display: "Cache" }
+    - { id: queue, display: "Queue" }
+    - { id: scheduler, display: "Scheduler" }
+    - { id: orchestrator, display: "Orchestrator" }
+    - { id: runtime, display: "Runtime" }
+    - { id: emulator, display: "Emulator" }
+    - { id: simulator, display: "Simulator" }
+    - { id: game, display: "Game" }
+    - { id: tool, display: "Tool" }
+    - { id: dev_tool, display: "Dev tool" }
+    - { id: test_harness, display: "Test harness" }
+    - { id: fuzzer, display: "Fuzzer" }
+    - { id: profiler, display: "Profiler" }
+    - { id: debugger, display: "Debugger" }
+    - { id: observability_agent, display: "Observability agent" }
+    - { id: ml_model, display: "ML model" }
+    - { id: ml_pipeline, display: "ML pipeline" }
+    - { id: autonomous_agent, display: "Autonomous agent" }
+    - { id: scraper, display: "Scraper" }
+    - { id: crawler, display: "Crawler" }
+    - { id: dapp, display: "dApp" }
+    - { id: smart_contract, display: "Smart contract" }
+    - { id: p2p_node, display: "P2P node" }
+    - { id: mesh_node, display: "Mesh node" }
+    - { id: cryptographic_primitive, display: "Cryptographic primitive" }
+    - { id: consensus_module, display: "Consensus module" }
+    - { id: identity_system, display: "Identity system" }
+    - { id: payment_rail, display: "Payment rail" }
+    - { id: filesystem, display: "Filesystem" }
+    - { id: network_stack, display: "Network stack" }
+    - { id: build_system, display: "Build system" }
+    - { id: ci_cd_component, display: "CI/CD component" }
+
+solution_category:
+  values:
+    - { id: automation, display: "Automation" }
+    - { id: productivity, display: "Productivity" }
+    - { id: communication, display: "Communication" }
+    - { id: collaboration, display: "Collaboration" }
+    - { id: security, display: "Security" }
+    - { id: privacy, display: "Privacy" }
+    - { id: anonymity, display: "Anonymity" }
+    - { id: censorship_resistance, display: "Censorship resistance" }
+    - { id: data_engineering, display: "Data engineering" }
+    - { id: data_leak_prevention, display: "Data leak prevention" }
+    - { id: ai_egress_control, display: "AI-egress control" }
+    - { id: content_moderation, display: "Content moderation" }
+    - { id: media_processing, display: "Media processing" }
+    - { id: generative_tooling, display: "Generative tooling" }
+    - { id: education, display: "Education" }
+    - { id: research_tooling, display: "Research tooling" }
+    - { id: scientific_computing, display: "Scientific computing" }
+    - { id: health, display: "Health" }
+    - { id: accessibility, display: "Accessibility" }
+    - { id: finance, display: "Finance" }
+    - { id: commerce, display: "Commerce" }
+    - { id: logistics, display: "Logistics" }
+    - { id: governance, display: "Governance" }
+    - { id: legal_tech, display: "Legal-tech" }
+    - { id: infrastructure, display: "Infrastructure" }
+    - { id: observability, display: "Observability" }
+    - { id: resilience_backup, display: "Resilience / backup" }
+    - { id: offline_first, display: "Offline-first" }
+    - { id: low_resource_edge_compute, display: "Low-resource / edge-compute" }
+    - { id: sustainability, display: "Sustainability" }
+    - { id: creative_tools, display: "Creative tools" }
+    - { id: gaming, display: "Gaming" }
+    - { id: simulation, display: "Simulation" }
+
+architecture:
+  values:
+    - { id: single_user_local, display: "Single-user local" }
+    - { id: single_tenant_server, display: "Single-tenant server" }
+    - { id: multi_tenant_saas, display: "Multi-tenant SaaS" }
+    - { id: self_hosted, display: "Self-hosted" }
+    - { id: federated, display: "Federated" }
+    - { id: decentralized, display: "Decentralized" }
+    - { id: p2p, display: "P2P" }
+    - { id: offline_first, display: "Offline-first" }
+    - { id: sync_based, display: "Sync-based" }
+    - { id: event_driven, display: "Event-driven" }
+    - { id: stream_processing, display: "Stream-processing" }
+    - { id: batch, display: "Batch" }
+    - { id: real_time, display: "Real-time" }
+    - { id: embedded_in_another_app, display: "Embedded-in-another-app" }
+    - { id: library_only, display: "Library-only" }
+    - { id: protocol_first, display: "Protocol-first" }
+    - { id: hardware_paired, display: "Hardware-paired" }
+
+scale:
+  values:
+    - { id: solo_dev, display: "Solo dev" }
+    - { id: small_team, display: "Small team" }
+    - { id: org_wide, display: "Org-wide" }
+    - { id: internet_scale, display: "Internet-scale" }
+
+language:
+  values:
+    - { id: c, display: "C" }
+    - { id: cpp, display: "C++" }
+    - { id: rust, display: "Rust" }
+    - { id: zig, display: "Zig" }
+    - { id: go, display: "Go" }
+    - { id: java, display: "Java" }
+    - { id: kotlin, display: "Kotlin" }
+    - { id: scala, display: "Scala" }
+    - { id: csharp, display: "C#" }
+    - { id: fsharp, display: "F#" }
+    - { id: python, display: "Python" }
+    - { id: ruby, display: "Ruby" }
+    - { id: php, display: "PHP" }
+    - { id: lua, display: "Lua" }
+    - { id: javascript, display: "JavaScript" }
+    - { id: typescript, display: "TypeScript" }
+    - { id: node, display: "Node.js" }
+    - { id: deno, display: "Deno" }
+    - { id: bun, display: "Bun" }
+    - { id: haskell, display: "Haskell" }
+    - { id: ocaml, display: "OCaml" }
+    - { id: elixir, display: "Elixir" }
+    - { id: clojure, display: "Clojure" }
+    - { id: swift, display: "Swift" }
+    - { id: kotlin_android, display: "Kotlin/Android" }
+    - { id: dart, display: "Dart" }
+    - { id: sql, display: "SQL" }
+    - { id: r_lang, display: "R" }
+    - { id: julia, display: "Julia" }
+    - { id: fortran, display: "Fortran" }
+    - { id: matlab, display: "MATLAB" }
+    - { id: solidity, display: "Solidity" }
+    - { id: move, display: "Move" }
+    - { id: bash, display: "Bash" }
+    - { id: posix_shell, display: "POSIX shell" }
+    - { id: other, display: "Other (must be justified in the body)" }
+
+stack:
+  # A stack is a language family. Each idea declares one primary
+  # language; its stack MUST be the family that language belongs to.
+  values:
+    - { id: systems, display: "Systems", languages: [c, cpp, rust, zig, go] }
+    - { id: jvm, display: "JVM", languages: [java, kotlin, scala] }
+    - { id: dotnet, display: ".NET", languages: [csharp, fsharp] }
+    - { id: scripting, display: "Scripting", languages: [python, ruby, php, lua] }
+    - { id: js_ts, display: "JS/TS", languages: [javascript, typescript, node, deno, bun] }
+    - { id: functional, display: "Functional", languages: [haskell, ocaml, elixir, clojure] }
+    - { id: mobile_native, display: "Mobile-native", languages: [swift, kotlin_android, dart] }
+    - { id: data, display: "Data", languages: [sql, r_lang, julia] }
+    - { id: scientific, display: "Scientific", languages: [fortran, matlab] }
+    - { id: blockchain, display: "Blockchain", languages: [solidity, move] }
+    - { id: shell, display: "Shell", languages: [bash, posix_shell] }
+    - { id: other, display: "Novel / niche (justified)", languages: [other] }
+
+layer:
+  values:
+    - { id: application, display: "Application" }
+    - { id: service, display: "Service" }
+    - { id: library, display: "Library" }
+    - { id: framework, display: "Framework" }
+    - { id: protocol, display: "Protocol" }
+    - { id: runtime, display: "Runtime" }
+    - { id: kernel_driver, display: "Kernel / driver" }
+    - { id: firmware, display: "Firmware" }
+    - { id: spec_standard, display: "Spec / standard" }
+    - { id: research_prototype, display: "Research prototype" }
+
+threat_model:
+  values:
+    - { id: passive_network_observer, display: "Passive network observer" }
+    - { id: active_mitm, display: "Active MITM" }
+    - { id: malicious_server, display: "Malicious server" }
+    - { id: malicious_client, display: "Malicious client" }
+    - { id: compromised_endpoint, display: "Compromised endpoint" }
+    - { id: supply_chain_attacker, display: "Supply-chain attacker" }
+    - { id: side_channel_observer, display: "Side-channel observer" }
+    - { id: physical_access_attacker, display: "Physical-access attacker" }
+    - { id: insider, display: "Insider" }
+    - { id: coerced_disclosure, display: "Coerced disclosure" }
+    - { id: mass_surveillance, display: "Mass surveillance" }
+    - { id: targeted_surveillance, display: "Targeted surveillance" }
+
+matrix_rules:
+  single_value_axes: [platform, software_class, solution_category, architecture, scale, language, stack, layer, novelty_axis]
+  multi_value_axes: [threat_model]
+  threat_model_min_items: 1
+  privacy_claiming_categories: [security, privacy, anonymity, censorship_resistance]
+  novelty_axis_values: [platform, class, category, architecture, threat_model, combination]
+  from_scratch:
+    must_be_true_by_default: true
+    dependency_cap: 1
+    dependency_must_be: "a general-purpose runtime, language, or toolchain — never the idea's substance"

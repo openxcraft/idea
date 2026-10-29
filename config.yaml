@@ -1,0 +1,41 @@
+# ============================================================
+# Software Idea Swarm — configuration
+# The diversity block mirrors the Cross-Domain Diversity
+# Generator addendum exactly. Do not edit quotas without
+# updating tags/diversity_matrices.yaml and the prompts.
+# ============================================================
+
+swarm:
+  max_ideas_per_run: 10
+  dedup_threshold: 0.85          # cosine similarity at or above this => duplicate
+  ideas_dir: ideas
+  runs_dir: runs
+  memory_dir: memory
+  tags_dir: tags
+  schema_file: schema/idea_frontmatter.schema.json
+  default_branch: main
+  digest_mode: rich               # rich | short | full
+  git_identity:
+    name: swarm-queen
+    email: swarm-queen@openxcraft.local
+  remotes:
+    github: https://github.com/openxcraft/idea.git
+    gitlab: https://gitlab.com/wellonn/idea.git
+
+diversity:
+  max_share_per_value: 0.2
+  min_distinct_stacks: 5
+  min_distinct_threat_models: 3
+  min_distinct_layers: 4
+  require_one_per_layer_when_budget_allows: true
+  forbid_wrapper_only: true
+  forbid_rename_only: true
+  coverage_bias: true             # bias slots toward under-represented corpus cells
+  report_uncovered_cells: true
+  matrices_file: tags/diversity_matrices.yaml
+  coverage_report_path: memory/coverage_report.json
+  # A run cannot satisfy max_share_per_value on a matrix whose value count is
+  # below 1 / max_share_per_value (e.g. `scale` has 4 values, so 0.2 * 4 = 0.8
+  # of a run is placeable). balanced_relaxation raises the per-value cap to
+  # ceil(n / values) for exactly those matrices and logs it in the manifest.
+  quota_reconciliation: balanced_relaxation

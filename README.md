@@ -6,7 +6,7 @@ ideas, index them, and publish everything to two git remotes and two chat
 channels automatically.
 
 - GitHub mirror: https://github.com/openxcraft/idea
-- GitLab home:   https://gitlab.com/wellonn/idea
+- GitLab home:   https://gitlab.com/opnxcode/idea
 - Digests are posted after every run to a Discord channel and a Telegram
   topic group.
 

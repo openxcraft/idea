@@ -9,7 +9,7 @@ Executed Sundays 20:00 Europe/Moscow.
    must appear at least once, or the audit must justify its absence.
 2. `python3 /home/z/my-project/scripts/swarm_push.py --audit`
    Commits the refreshed coverage report + audit file, pushes to GitHub
-   (openxcraft/idea) and GitLab (wellonn/idea), and posts the coverage
+   (openxcraft/idea) and GitLab (opnxcode/idea), and posts the coverage
    digest (per-axis entropy, uncovered values, window gaps) to the Discord
    webhook and the Telegram topic group.
 3. Security: never print/commit anything from `/home/z/my-project/secrets`;

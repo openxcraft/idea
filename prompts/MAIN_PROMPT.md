@@ -74,7 +74,7 @@ The body must contain these sections, each with substantive content
 6. Publish everywhere:
    `python3 /home/z/my-project/scripts/swarm_push.py --run-id <run-id>`
    Commits + pushes to remotes `github` (openxcraft/idea) and `gitlab`
-   (wellonn/idea), then posts the digest to the Discord webhook and the
+   (opnxcode/idea), then posts the digest to the Discord webhook and the
    Telegram topic group.
 7. Finish with a short run report: accepted / rejected counts with reason
    codes, coverage delta, per-channel push status.

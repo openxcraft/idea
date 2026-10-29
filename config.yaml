@@ -20,7 +20,7 @@ swarm:
     email: swarm-queen@openxcraft.local
   remotes:
     github: https://github.com/openxcraft/idea.git
-    gitlab: https://gitlab.com/wellonn/idea.git
+    gitlab: https://gitlab.com/opnxcode/idea.git
 
 diversity:
   max_share_per_value: 0.2

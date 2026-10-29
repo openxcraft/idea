@@ -2,7 +2,7 @@
 
 Executed every 6 hours by the scheduler. Work in `/home/z/my-project/swarm`
 (git repo; remotes: `github` = https://github.com/openxcraft/idea,
-`gitlab` = https://gitlab.com/wellonn/idea). Run-id: `run-YYYYMMDD-HHMM`
+`gitlab` = https://gitlab.com/opnxcode/idea). Run-id: `run-YYYYMMDD-HHMM`
 (Europe/Moscow).
 
 ## Procedure

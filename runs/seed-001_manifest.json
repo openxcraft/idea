@@ -401,6 +401,18 @@
     "telegram": {
       "status": "ok",
       "detail": "1/1 chunks delivered"
+    },
+    "republish": {
+      "at": "2026-10-29T18:47:46Z",
+      "note": "Manual republish after credential rotation (new glpat for gitlab.com/wellonn/idea; GitHub PAT now has push access to openxcraft/idea). Earlier 'pushed: false' entries were caused by superseded/limited credentials plus transient GitLab IP rate-limiting.",
+      "github": {
+        "pushed": true,
+        "detail": "pushed 86693c9..99b80bc -> openxcraft/idea main (repo was empty, branch created)"
+      },
+      "gitlab": {
+        "pushed": true,
+        "detail": "fast-forward 86693c9..99b80bc -> wellonn/idea main"
+      }
     }
   }
 }

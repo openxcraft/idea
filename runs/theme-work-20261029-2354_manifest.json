@@ -489,39 +489,36 @@
     "justification": "corpus_size=15 is far below the combined vocabulary of the matrices (hundreds of values), so a 15-idea window necessarily leaves most values uncovered; the coverage frontier is tracked in cells.top_under_represented and future runs bias slots toward it."
   },
   "push_results": {
-    "at": "2026-10-29T21:00:36Z",
+    "at": "2026-10-29T21:25:32Z",
     "git": {
       "commit": {
-        "committed": true,
-        "message": "swarm: run theme-work-20261029-2354 — 10 ideas (corpus 15)",
-        "sha": "04a12f8e5324bf36023c890e49dc939a56dd2191"
+        "committed": false,
+        "detail": "no changes"
       },
       "github": {
-        "pushed": false,
+        "pushed": true,
         "attempts": 1,
-        "detail": "fatal: could not read Username for 'https://github.com': terminal prompts disabled",
-        "note": "credentials store /home/z/my-project/secrets/credentials.json not found — push attempted anonymously and failed; commits stay local and push automatically on a later run once credentials are provisioned"
+        "detail": "To https://github.com/openxcraft/idea.git |    68e049b..4994d51  HEAD -> main"
       },
       "gitlab": {
-        "pushed": false,
+        "pushed": true,
         "attempts": 1,
-        "detail": "fatal: could not read Username for 'https://gitlab.com': terminal prompts disabled",
-        "note": "credentials store /home/z/my-project/secrets/credentials.json not found — push attempted anonymously and failed; commits stay local and push automatically on a later run once credentials are provisioned"
+        "detail": "remote:  | To https://gitlab.com/wellonn/idea.git |    68e049b..4994d51  HEAD -> main"
       },
       "links": {
-        "github_commit": "https://github.com/openxcraft/idea/commit/04a12f8e5324bf36023c890e49dc939a56dd2191",
-        "gitlab_commit": "https://gitlab.com/wellonn/idea/-/commit/04a12f8e5324bf36023c890e49dc939a56dd2191",
+        "github_commit": "https://github.com/openxcraft/idea/commit/",
+        "gitlab_commit": "https://gitlab.com/wellonn/idea/-/commit/",
         "github_repo": "https://github.com/openxcraft/idea",
         "gitlab_repo": "https://gitlab.com/wellonn/idea"
       }
     },
     "discord": {
-      "status": "skipped",
-      "detail": "discord_webhook not present in credentials store"
+      "status": "ok",
+      "detail": "1/1 chunks delivered"
     },
     "telegram": {
-      "status": "skipped",
-      "detail": "telegram credentials not present in credentials store"
+      "status": "ok",
+      "detail": "1/1 chunks delivered"
     }
   }
 }

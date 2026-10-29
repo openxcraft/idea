@@ -1,94 +1,86 @@
 {
   "meta": {
-    "corpus_size": 5,
-    "generated_at": "2026-10-29T17:15:09Z",
-    "run_id": "seed-001",
+    "corpus_size": 15,
+    "generated_at": "2026-10-29T20:59:57Z",
+    "run_id": "theme-work-20261029-2354",
     "window": {
-      "size": 5
+      "size": 15
     }
   },
   "per_axis": {
     "platform": {
       "counts": {
-        "desktop": 0,
-        "mobile": 0,
-        "web": 1,
-        "cli": 1,
-        "tui": 0,
-        "browser_extension": 0,
+        "desktop": 1,
+        "mobile": 1,
+        "web": 2,
+        "cli": 2,
+        "tui": 1,
+        "browser_extension": 1,
         "ide_extension": 0,
         "editor_plugin": 0,
         "server_backend": 1,
         "cloud_service": 0,
-        "serverless_function": 0,
+        "serverless_function": 1,
         "edge_runtime": 0,
         "embedded_mcu": 1,
         "iot": 0,
-        "wearables": 0,
+        "wearables": 1,
         "smart_tv": 0,
         "automotive": 0,
         "robotics": 0,
         "ar_vr_xr": 0,
         "game_console": 0,
-        "kernel_driver": 0,
+        "kernel_driver": 1,
         "bootloader": 0,
         "firmware": 0,
         "protocol_daemon": 1,
-        "container_image": 0,
+        "container_image": 1,
         "wasm_module": 0
       },
-      "entropy_bits": 2.322,
+      "entropy_bits": 3.64,
       "max_entropy_bits": 4.7,
       "max_share": {
         "value": "web",
-        "share": 0.2
+        "share": 0.133
       },
       "uncovered_values": [
-        "desktop",
-        "mobile",
-        "tui",
-        "browser_extension",
         "ide_extension",
         "editor_plugin",
         "cloud_service",
-        "serverless_function",
         "edge_runtime",
         "iot",
-        "wearables",
         "smart_tv",
         "automotive",
         "robotics",
         "ar_vr_xr",
         "game_console",
-        "kernel_driver",
         "bootloader",
         "firmware",
-        "container_image",
         "wasm_module"
       ]
     },
     "software_class": {
       "counts": {
-        "end_user_app": 0,
+        "end_user_app": 2,
         "library": 0,
-        "framework": 0,
-        "sdk": 0,
-        "api": 0,
+        "framework": 1,
+        "sdk": 1,
+        "api": 1,
         "microservice": 0,
         "monolith": 0,
         "plugin": 0,
-        "protocol_spec": 0,
-        "compiler": 0,
+        "protocol_spec": 2,
+        "compiler": 1,
         "interpreter": 1,
         "transpiler": 0,
-        "linter": 0,
+        "linter": 1,
         "formatter": 0,
         "package_manager": 0,
         "database": 0,
         "storage_engine": 1,
         "cache": 0,
         "queue": 0,
-        "scheduler": 0,
+        "scheduler": 1,
         "orchestrator": 0,
         "runtime": 0,
         "emulator": 0,
@@ -119,31 +111,23 @@
         "build_system": 0,
         "ci_cd_component": 0
       },
-      "entropy_bits": 2.322,
+      "entropy_bits": 3.64,
       "max_entropy_bits": 5.615,
       "max_share": {
-        "value": "interpreter",
-        "share": 0.2
+        "value": "end_user_app",
+        "share": 0.133
       },
       "uncovered_values": [
-        "end_user_app",
         "library",
-        "framework",
-        "sdk",
-        "api",
         "microservice",
         "monolith",
         "plugin",
-        "protocol_spec",
-        "compiler",
         "transpiler",
-        "linter",
         "formatter",
         "package_manager",
         "database",
         "cache",
         "queue",
-        "scheduler",
         "orchestrator",
         "runtime",
         "emulator",
@@ -175,9 +159,9 @@
     "solution_category": {
       "counts": {
         "automation": 0,
-        "productivity": 0,
-        "communication": 0,
-        "collaboration": 0,
+        "productivity": 2,
+        "communication": 2,
+        "collaboration": 2,
         "security": 0,
         "privacy": 0,
         "anonymity": 0,
@@ -188,7 +172,7 @@
         "content_moderation": 0,
         "media_processing": 0,
         "generative_tooling": 0,
-        "education": 1,
+        "education": 3,
         "research_tooling": 0,
         "scientific_computing": 0,
         "health": 0,
@@ -198,27 +182,24 @@
         "logistics": 0,
         "governance": 0,
         "legal_tech": 0,
-        "infrastructure": 0,
+        "infrastructure": 1,
         "observability": 1,
         "resilience_backup": 0,
         "offline_first": 0,
         "low_resource_edge_compute": 0,
-        "sustainability": 0,
+        "sustainability": 1,
         "creative_tools": 0,
         "gaming": 0,
         "simulation": 0
       },
-      "entropy_bits": 2.322,
+      "entropy_bits": 3.19,
       "max_entropy_bits": 5.044,
       "max_share": {
-        "value": "censorship_resistance",
+        "value": "education",
         "share": 0.2
       },
       "uncovered_values": [
         "automation",
-        "productivity",
-        "communication",
-        "collaboration",
         "security",
         "privacy",
         "anonymity",
@@ -235,11 +216,9 @@
         "logistics",
         "governance",
         "legal_tech",
-        "infrastructure",
         "resilience_backup",
         "offline_first",
         "low_resource_edge_compute",
-        "sustainability",
         "creative_tools",
         "gaming",
         "simulation"
@@ -247,86 +226,80 @@
     },
     "architecture": {
       "counts": {
-        "single_user_local": 1,
-        "single_tenant_server": 0,
+        "single_user_local": 2,
+        "single_tenant_server": 1,
         "multi_tenant_saas": 0,
         "self_hosted": 0,
-        "federated": 0,
+        "federated": 1,
         "decentralized": 0,
-        "p2p": 1,
-        "offline_first": 1,
-        "sync_based": 0,
-        "event_driven": 1,
+        "p2p": 2,
+        "offline_first": 2,
+        "sync_based": 1,
+        "event_driven": 2,
         "stream_processing": 0,
-        "batch": 0,
-        "real_time": 0,
-        "embedded_in_another_app": 0,
+        "batch": 1,
+        "real_time": 1,
+        "embedded_in_another_app": 1,
         "library_only": 1,
         "protocol_first": 0,
         "hardware_paired": 0
       },
-      "entropy_bits": 2.322,
+      "entropy_bits": 3.374,
       "max_entropy_bits": 4.087,
       "max_share": {
         "value": "single_user_local",
-        "share": 0.2
+        "share": 0.133
       },
       "uncovered_values": [
-        "single_tenant_server",
         "multi_tenant_saas",
         "self_hosted",
-        "federated",
         "decentralized",
-        "sync_based",
         "stream_processing",
-        "batch",
-        "real_time",
-        "embedded_in_another_app",
         "protocol_first",
         "hardware_paired"
       ]
     },
     "scale": {
       "counts": {
-        "solo_dev": 2,
-        "small_team": 1,
-        "org_wide": 1,
-        "internet_scale": 1
+        "solo_dev": 5,
+        "small_team": 4,
+        "org_wide": 4,
+        "internet_scale": 2
       },
-      "entropy_bits": 1.922,
+      "entropy_bits": 1.933,
       "max_entropy_bits": 2.0,
       "max_share": {
         "value": "solo_dev",
-        "share": 0.4
+        "share": 0.333
       },
       "uncovered_values": []
     },
     "language": {
       "counts": {
-        "c": 0,
+        "c": 1,
         "cpp": 0,
         "rust": 1,
         "zig": 0,
-        "go": 0,
+        "go": 1,
         "java": 0,
-        "kotlin": 0,
+        "kotlin": 1,
         "scala": 0,
         "csharp": 1,
-        "fsharp": 0,
-        "python": 1,
+        "fsharp": 1,
+        "python": 2,
         "ruby": 0,
         "php": 0,
         "lua": 0,
-        "javascript": 0,
-        "typescript": 1,
+        "javascript": 1,
+        "typescript": 2,
         "node": 0,
         "deno": 0,
         "bun": 0,
         "haskell": 0,
-        "ocaml": 0,
+        "ocaml": 1,
         "elixir": 1,
         "clojure": 0,
-        "swift": 0,
+        "swift": 2,
         "kotlin_android": 0,
         "dart": 0,
         "sql": 0,
@@ -340,32 +313,25 @@
         "posix_shell": 0,
         "other": 0
       },
-      "entropy_bits": 2.322,
+      "entropy_bits": 3.507,
       "max_entropy_bits": 5.17,
       "max_share": {
-        "value": "rust",
-        "share": 0.2
+        "value": "python",
+        "share": 0.133
       },
       "uncovered_values": [
-        "c",
         "cpp",
         "zig",
-        "go",
         "java",
-        "kotlin",
         "scala",
-        "fsharp",
         "ruby",
         "php",
         "lua",
-        "javascript",
         "node",
         "deno",
         "bun",
         "haskell",
-        "ocaml",
         "clojure",
-        "swift",
         "kotlin_android",
         "dart",
         "sql",
@@ -382,28 +348,26 @@
     },
     "stack": {
       "counts": {
-        "systems": 1,
-        "jvm": 0,
-        "dotnet": 1,
-        "scripting": 1,
-        "js_ts": 1,
-        "functional": 1,
-        "mobile_native": 0,
+        "systems": 3,
+        "jvm": 1,
+        "dotnet": 2,
+        "scripting": 2,
+        "js_ts": 3,
+        "functional": 2,
+        "mobile_native": 2,
         "data": 0,
         "scientific": 0,
         "blockchain": 0,
         "shell": 0,
         "other": 0
       },
-      "entropy_bits": 2.322,
+      "entropy_bits": 2.74,
       "max_entropy_bits": 3.585,
       "max_share": {
         "value": "systems",
         "share": 0.2
       },
       "uncovered_values": [
-        "jvm",
-        "mobile_native",
         "data",
         "scientific",
         "blockchain",
@@ -413,54 +377,46 @@
     },
     "layer": {
       "counts": {
-        "application": 1,
-        "service": 1,
-        "library": 1,
-        "framework": 0,
-        "protocol": 1,
+        "application": 3,
+        "service": 2,
+        "library": 3,
+        "framework": 2,
+        "protocol": 2,
         "runtime": 1,
-        "kernel_driver": 0,
+        "kernel_driver": 1,
         "firmware": 0,
-        "spec_standard": 0,
+        "spec_standard": 1,
         "research_prototype": 0
       },
-      "entropy_bits": 2.322,
+      "entropy_bits": 2.873,
       "max_entropy_bits": 3.322,
       "max_share": {
         "value": "application",
         "share": 0.2
       },
       "uncovered_values": [
-        "framework",
-        "kernel_driver",
         "firmware",
-        "spec_standard",
         "research_prototype"
       ]
     },
     "threat_model": {
       "counts": {
-        "passive_network_observer": 1,
-        "active_mitm": 1,
-        "malicious_server": 1,
-        "malicious_client": 0,
-        "compromised_endpoint": 0,
-        "supply_chain_attacker": 1,
+        "passive_network_observer": 2,
+        "active_mitm": 2,
+        "malicious_server": 2,
+        "malicious_client": 1,
+        "compromised_endpoint": 2,
+        "supply_chain_attacker": 3,
         "side_channel_observer": 1,
-        "physical_access_attacker": 0,
-        "insider": 1,
+        "physical_access_attacker": 1,
+        "insider": 2,
         "coerced_disclosure": 1,
         "mass_surveillance": 1,
-        "targeted_surveillance": 0
+        "targeted_surveillance": 1
       },
-      "total_mentions": 8,
-      "avg_per_idea": 1.6,
-      "uncovered_values": [
-        "malicious_client",
-        "compromised_endpoint",
-        "physical_access_attacker",
-        "targeted_surveillance"
-      ]
+      "total_mentions": 19,
+      "avg_per_idea": 1.27,
+      "uncovered_values": []
     }
   },
   "cells": {
@@ -473,7 +429,7 @@
           "runtime"
         ],
         "count": 1,
-        "share_of_corpus": 0.2
+        "share_of_corpus": 0.067
       },
       {
         "cell": [
@@ -483,7 +439,7 @@
           "service"
         ],
         "count": 1,
-        "share_of_corpus": 0.2
+        "share_of_corpus": 0.067
       },
       {
         "cell": [
@@ -493,7 +449,7 @@
           "library"
         ],
         "count": 1,
-        "share_of_corpus": 0.2
+        "share_of_corpus": 0.067
       },
       {
         "cell": [
@@ -503,7 +459,7 @@
           "protocol"
         ],
         "count": 1,
-        "share_of_corpus": 0.2
+        "share_of_corpus": 0.067
       },
       {
         "cell": [
@@ -513,108 +469,92 @@
           "application"
         ],
         "count": 1,
-        "share_of_corpus": 0.2
+        "share_of_corpus": 0.067
       }
     ],
     "top_under_represented": [
       {
         "cell": [
-          "desktop",
-          "end_user_app",
-          "automation",
-          "framework"
+          "ar_vr_xr",
+          "autonomous_agent",
+          "ai_egress_control",
+          "firmware"
         ],
         "count": 0,
-        "deficit_score": 0.189
+        "deficit_score": 0.689
       },
       {
         "cell": [
-          "desktop",
-          "end_user_app",
-          "automation",
-          "kernel_driver"
+          "ar_vr_xr",
+          "autonomous_agent",
+          "ai_egress_control",
+          "research_prototype"
         ],
         "count": 0,
-        "deficit_score": 0.189
+        "deficit_score": 0.689
       },
       {
         "cell": [
-          "desktop",
-          "end_user_app",
+          "ar_vr_xr",
+          "autonomous_agent",
+          "anonymity",
+          "firmware"
+        ],
+        "count": 0,
+        "deficit_score": 0.689
+      },
+      {
+        "cell": [
+          "ar_vr_xr",
+          "autonomous_agent",
+          "anonymity",
+          "research_prototype"
+        ],
+        "count": 0,
+        "deficit_score": 0.689
+      },
+      {
+        "cell": [
+          "ar_vr_xr",
+          "autonomous_agent",
           "automation",
           "firmware"
         ],
         "count": 0,
-        "deficit_score": 0.189
-      },
-      {
-        "cell": [
-          "desktop",
-          "end_user_app",
-          "productivity",
-          "framework"
-        ],
-        "count": 0,
-        "deficit_score": 0.189
-      },
-      {
-        "cell": [
-          "desktop",
-          "end_user_app",
-          "productivity",
-          "kernel_driver"
-        ],
-        "count": 0,
-        "deficit_score": 0.189
+        "deficit_score": 0.689
       }
     ],
-    "distinct_cells_observed": 5
+    "distinct_cells_observed": 15
   },
   "rolling_window": {
-    "window_size": 5,
+    "window_size": 15,
     "uncovered_values": {
       "platform": [
-        "desktop",
-        "mobile",
-        "tui",
-        "browser_extension",
         "ide_extension",
         "editor_plugin",
         "cloud_service",
-        "serverless_function",
         "edge_runtime",
         "iot",
-        "wearables",
         "smart_tv",
         "automotive",
         "robotics",
         "ar_vr_xr",
         "game_console",
-        "kernel_driver",
         "bootloader",
         "firmware",
-        "container_image",
         "wasm_module"
       ],
       "software_class": [
-        "end_user_app",
         "library",
-        "framework",
-        "sdk",
-        "api",
         "microservice",
         "monolith",
         "plugin",
-        "protocol_spec",
-        "compiler",
         "transpiler",
-        "linter",
         "formatter",
         "package_manager",
         "database",
         "cache",
         "queue",
-        "scheduler",
         "orchestrator",
         "runtime",
         "emulator",
@@ -644,9 +584,6 @@
       ],
       "solution_category": [
         "automation",
-        "productivity",
-        "communication",
-        "collaboration",
         "security",
         "privacy",
         "anonymity",
@@ -663,50 +600,35 @@
         "logistics",
         "governance",
         "legal_tech",
-        "infrastructure",
         "resilience_backup",
         "offline_first",
         "low_resource_edge_compute",
-        "sustainability",
         "creative_tools",
         "gaming",
         "simulation"
       ],
       "architecture": [
-        "single_tenant_server",
         "multi_tenant_saas",
         "self_hosted",
-        "federated",
         "decentralized",
-        "sync_based",
         "stream_processing",
-        "batch",
-        "real_time",
-        "embedded_in_another_app",
         "protocol_first",
         "hardware_paired"
       ],
       "scale": [],
       "language": [
-        "c",
         "cpp",
         "zig",
-        "go",
         "java",
-        "kotlin",
         "scala",
-        "fsharp",
         "ruby",
         "php",
         "lua",
-        "javascript",
         "node",
         "deno",
         "bun",
         "haskell",
-        "ocaml",
         "clojure",
-        "swift",
         "kotlin_android",
         "dart",
         "sql",
@@ -721,8 +643,6 @@
         "other"
       ],
       "stack": [
-        "jvm",
-        "mobile_native",
         "data",
         "scientific",
         "blockchain",
@@ -730,18 +650,10 @@
         "other"
       ],
       "layer": [
-        "framework",
-        "kernel_driver",
         "firmware",
-        "spec_standard",
         "research_prototype"
       ],
-      "threat_model": [
-        "malicious_client",
-        "compromised_endpoint",
-        "physical_access_attacker",
-        "targeted_surveillance"
-      ]
+      "threat_model": []
     },
     "status": "non_compliant"
   }

@@ -1,8 +1,8 @@
 {
   "meta": {
-    "nodes": 5,
-    "edges": 0,
-    "updated_at": "2026-10-29T17:15:09Z"
+    "nodes": 15,
+    "edges": 2,
+    "updated_at": "2026-10-29T20:59:57Z"
   },
   "nodes": [
     {
@@ -67,7 +67,135 @@
       "layer": "application",
       "language": "csharp",
       "cell": "cli|tool|accessibility|application"
+    },
+    {
+      "id": "apprentice-log",
+      "tags": [
+        "offline-sync",
+        "background-tasks",
+        "assessment",
+        "provenance"
+      ],
+      "layer": "application",
+      "language": "swift",
+      "cell": "mobile|end_user_app|education|application"
+    },
+    {
+      "id": "attention-ledger",
+      "tags": [
+        "reconciliation",
+        "wal",
+        "audit-trails"
+      ],
+      "layer": "application",
+      "language": "go",
+      "cell": "desktop|end_user_app|productivity|application"
+    },
+    {
+      "id": "buzzline",
+      "tags": [
+        "ble",
+        "p2p",
+        "ios",
+        "delay-tolerant"
+      ],
+      "layer": "framework",
+      "language": "swift",
+      "cell": "wearables|sdk|communication|framework"
+    },
+    {
+      "id": "carbon-cruise",
+      "tags": [
+        "energy-measurement",
+        "carbon-accounting",
+        "drivers",
+        "schedulers"
+      ],
+      "layer": "kernel_driver",
+      "language": "c",
+      "cell": "kernel_driver|scheduler|sustainability|kernel_driver"
+    },
+    {
+      "id": "delta-room",
+      "tags": [
+        "deliberation",
+        "audit-trails",
+        "provenance",
+        "transparency"
+      ],
+      "layer": "protocol",
+      "language": "kotlin",
+      "cell": "container_image|protocol_spec|collaboration|protocol"
+    },
+    {
+      "id": "drill-forge",
+      "tags": [
+        "tutoring",
+        "assessment",
+        "step-by-step",
+        "offline-sync"
+      ],
+      "layer": "library",
+      "language": "typescript",
+      "cell": "web|framework|education|library"
+    },
+    {
+      "id": "envdock",
+      "tags": [
+        "provisioning",
+        "ci",
+        "reproducibility",
+        "build"
+      ],
+      "layer": "spec_standard",
+      "language": "python",
+      "cell": "cli|protocol_spec|infrastructure|spec_standard"
+    },
+    {
+      "id": "kadence",
+      "tags": [
+        "parsing",
+        "linting",
+        "curriculum"
+      ],
+      "layer": "framework",
+      "language": "ocaml",
+      "cell": "tui|compiler|productivity|framework"
+    },
+    {
+      "id": "pair-pulse",
+      "tags": [
+        "serverless",
+        "orchestration",
+        "background-tasks"
+      ],
+      "layer": "service",
+      "language": "fsharp",
+      "cell": "serverless_function|api|collaboration|service"
+    },
+    {
+      "id": "tone-check",
+      "tags": [
+        "nlp",
+        "linting",
+        "extensions",
+        "summarization"
+      ],
+      "layer": "library",
+      "language": "javascript",
+      "cell": "browser_extension|linter|communication|library"
     }
   ],
-  "edges": []
+  "edges": [
+    [
+      "quorum-mesh",
+      "buzzline",
+      0.5
+    ],
+    [
+      "apprentice-log",
+      "drill-forge",
+      0.333
+    ]
+  ]
 }

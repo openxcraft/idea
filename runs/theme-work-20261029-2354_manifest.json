@@ -1,0 +1,492 @@
+{
+  "run_id": "theme-work-20261029-2354",
+  "started_at": "2026-10-29T20:59:57Z",
+  "finished_at": "2026-10-29T20:59:57Z",
+  "corpus_size_before": 5,
+  "corpus_size_after": 15,
+  "budget": 10,
+  "digest_mode": "rich",
+  "diversity": {
+    "max_share_per_value": 0.2,
+    "min_distinct_stacks": 5,
+    "min_distinct_threat_models": 3,
+    "min_distinct_layers": 4,
+    "require_one_per_layer_when_budget_allows": true,
+    "forbid_wrapper_only": true,
+    "forbid_rename_only": true,
+    "coverage_bias": true,
+    "report_uncovered_cells": true,
+    "coverage_report_path": "memory/coverage_report.json",
+    "quota_reconciliation": "balanced_relaxation"
+  },
+  "theme": {
+    "task_id": "SWARM-THEME-WORK",
+    "words": [
+      "productivity",
+      "learning",
+      "work",
+      "team"
+    ],
+    "mapping": {
+      "productivity": [
+        "productivity"
+      ],
+      "learning": [
+        "education",
+        "research_tooling"
+      ],
+      "work": [
+        "productivity",
+        "collaboration",
+        "communication",
+        "automation"
+      ],
+      "team": [
+        "collaboration",
+        "communication"
+      ]
+    },
+    "priority": [
+      "productivity",
+      "education",
+      "collaboration",
+      "communication",
+      "automation"
+    ],
+    "themed_slots": 8,
+    "themed_category_counts": {
+      "education": 2,
+      "productivity": 2,
+      "communication": 2,
+      "collaboration": 2
+    },
+    "rule": "Theme applies to solution_category only; every other axis stays coverage-biased; per-category cap 2 (max_share 0.2 at n=10) never exceeded for the theme's sake."
+  },
+  "targeted_cells": [
+    {
+      "cell": [
+        "mobile",
+        "end_user_app",
+        "education",
+        "application"
+      ],
+      "deficit_score": 0.759,
+      "rationale": "under-represented cell (deficit 0.759); uncovered pre-run: platform='mobile', software_class='end_user_app'"
+    },
+    {
+      "cell": [
+        "desktop",
+        "end_user_app",
+        "productivity",
+        "application"
+      ],
+      "deficit_score": 0.689,
+      "rationale": "under-represented cell (deficit 0.689); uncovered pre-run: platform='desktop', software_class='end_user_app', solution_category='productivity'"
+    },
+    {
+      "cell": [
+        "wearables",
+        "sdk",
+        "communication",
+        "framework"
+      ],
+      "deficit_score": 0.689,
+      "rationale": "under-represented cell (deficit 0.689); all four axes were uncovered pre-run"
+    },
+    {
+      "cell": [
+        "kernel_driver",
+        "scheduler",
+        "sustainability",
+        "kernel_driver"
+      ],
+      "deficit_score": 0.689,
+      "rationale": "under-represented cell (deficit 0.689); all four axes were uncovered pre-run"
+    },
+    {
+      "cell": [
+        "container_image",
+        "protocol_spec",
+        "collaboration",
+        "protocol"
+      ],
+      "deficit_score": 0.689,
+      "rationale": "under-represented cell (deficit 0.689); uncovered pre-run: platform='container_image', software_class='protocol_spec', solution_category='collaboration'"
+    },
+    {
+      "cell": [
+        "web",
+        "framework",
+        "education",
+        "library"
+      ],
+      "deficit_score": 0.82,
+      "rationale": "under-represented cell (deficit 0.82); uncovered pre-run: software_class='framework'"
+    },
+    {
+      "cell": [
+        "cli",
+        "protocol_spec",
+        "infrastructure",
+        "spec_standard"
+      ],
+      "deficit_score": 0.751,
+      "rationale": "under-represented cell (deficit 0.751); uncovered pre-run: software_class='protocol_spec', solution_category='infrastructure', layer='spec_standard'"
+    },
+    {
+      "cell": [
+        "tui",
+        "compiler",
+        "productivity",
+        "framework"
+      ],
+      "deficit_score": 0.689,
+      "rationale": "under-represented cell (deficit 0.689); all four axes were uncovered pre-run"
+    },
+    {
+      "cell": [
+        "serverless_function",
+        "api",
+        "collaboration",
+        "service"
+      ],
+      "deficit_score": 0.689,
+      "rationale": "under-represented cell (deficit 0.689); uncovered pre-run: platform='serverless_function', software_class='api', solution_category='collaboration'"
+    },
+    {
+      "cell": [
+        "browser_extension",
+        "linter",
+        "communication",
+        "library"
+      ],
+      "deficit_score": 0.689,
+      "rationale": "under-represented cell (deficit 0.689); uncovered pre-run: platform='browser_extension', software_class='linter', solution_category='communication'"
+    }
+  ],
+  "accepted": [
+    {
+      "id": "apprentice-log",
+      "title": "apprentice-log — offline competency evidence for vocational apprentices",
+      "path": "theme-work-20261029-2354-apprentice-log.md",
+      "hash": "b1ae433b3b30280026f086eb60733df424c5ccde9d8f32efbd05dfa964d39191",
+      "cell": "mobile|end_user_app|education|application"
+    },
+    {
+      "id": "attention-ledger",
+      "title": "attention-ledger — double-entry focus accounting for personal knowledge work",
+      "path": "theme-work-20261029-2354-attention-ledger.md",
+      "hash": "ea9449ffc81cd885b819abbe6bd58e0cba505834d4504c4077571b2a74e048c6",
+      "cell": "desktop|end_user_app|productivity|application"
+    },
+    {
+      "id": "buzzline",
+      "title": "buzzline — a haptic presence vocabulary for small teams over direct BLE",
+      "path": "theme-work-20261029-2354-buzzline.md",
+      "hash": "07532454004dfe3ecf22b6ad49c085c3bb5ac3952d1132dd3649fc8689c080b6",
+      "cell": "wearables|sdk|communication|framework"
+    },
+    {
+      "id": "carbon-cruise",
+      "title": "carbon-cruise — a kernel governor that schedules laptop work by grid carbon intensity",
+      "path": "theme-work-20261029-2354-carbon-cruise.md",
+      "hash": "4aa72089f7bcf0a9386b17c01e623f087adda988b14863da016ddde914c8c28b",
+      "cell": "kernel_driver|scheduler|sustainability|kernel_driver"
+    },
+    {
+      "id": "delta-room",
+      "title": "delta-room — a federated decision log that diffs what a team agreed from what happened",
+      "path": "theme-work-20261029-2354-delta-room.md",
+      "hash": "210c08430c4f5c7a4f1dbd5e378dca461f67ed133061bafb66e76903cbb139fb",
+      "cell": "container_image|protocol_spec|collaboration|protocol"
+    },
+    {
+      "id": "drill-forge",
+      "title": "drill-forge — a spaced-repetition engine whose cards are typed programs, not static text",
+      "path": "theme-work-20261029-2354-drill-forge.md",
+      "hash": "ec1c0396b1686ca556247655d6dc5350d0b5c2c0a9e9ad2f6602f5427a3e45df",
+      "cell": "web|framework|education|library"
+    },
+    {
+      "id": "envdock",
+      "title": "envdock — a machine-checked specification for reproducible development environments",
+      "path": "theme-work-20261029-2354-envdock.md",
+      "hash": "519f11514ecc9a2af83c2ebb946aea133812d7c2526301cfef949c6ac2470fb8",
+      "cell": "cli|protocol_spec|infrastructure|spec_standard"
+    },
+    {
+      "id": "kadence",
+      "title": "kadence — a compiler that type-checks your workday before you live it",
+      "path": "theme-work-20261029-2354-kadence.md",
+      "hash": "940d0655677da093547e6a0eb28fef77f7421eb24eedb60e75e2040dfc522344",
+      "cell": "tui|compiler|productivity|framework"
+    },
+    {
+      "id": "pair-pulse",
+      "title": "pair-pulse — blind pairing rotations that cross-pollinate team knowledge",
+      "path": "theme-work-20261029-2354-pair-pulse.md",
+      "hash": "bc9e4c43c1e36396025557c56e00cffe0dd36f574728d854e88019b0c90b61fe",
+      "cell": "serverless_function|api|collaboration|service"
+    },
+    {
+      "id": "tone-check",
+      "title": "tone-check — a local linter for escalation patterns in team messages",
+      "path": "theme-work-20261029-2354-tone-check.md",
+      "hash": "b46fdbba6195419bf3f2cd004bf5ee47e1be2fc2175b36146d46a5651b7eb942",
+      "cell": "browser_extension|linter|communication|library"
+    }
+  ],
+  "rejected": [],
+  "quota": {
+    "run_value_counts": {
+      "platform": {
+        "mobile": 1,
+        "desktop": 1,
+        "wearables": 1,
+        "kernel_driver": 1,
+        "container_image": 1,
+        "web": 1,
+        "cli": 1,
+        "tui": 1,
+        "serverless_function": 1,
+        "browser_extension": 1
+      },
+      "software_class": {
+        "end_user_app": 2,
+        "sdk": 1,
+        "scheduler": 1,
+        "protocol_spec": 2,
+        "framework": 1,
+        "compiler": 1,
+        "api": 1,
+        "linter": 1
+      },
+      "solution_category": {
+        "education": 2,
+        "productivity": 2,
+        "communication": 2,
+        "sustainability": 1,
+        "collaboration": 2,
+        "infrastructure": 1
+      },
+      "architecture": {
+        "offline_first": 1,
+        "event_driven": 1,
+        "p2p": 1,
+        "real_time": 1,
+        "federated": 1,
+        "sync_based": 1,
+        "batch": 1,
+        "single_user_local": 1,
+        "single_tenant_server": 1,
+        "embedded_in_another_app": 1
+      },
+      "scale": {
+        "solo_dev": 3,
+        "org_wide": 3,
+        "small_team": 3,
+        "internet_scale": 1
+      },
+      "language": {
+        "swift": 2,
+        "go": 1,
+        "c": 1,
+        "kotlin": 1,
+        "typescript": 1,
+        "python": 1,
+        "ocaml": 1,
+        "fsharp": 1,
+        "javascript": 1
+      },
+      "stack": {
+        "mobile_native": 2,
+        "systems": 2,
+        "jvm": 1,
+        "js_ts": 2,
+        "scripting": 1,
+        "functional": 1,
+        "dotnet": 1
+      },
+      "layer": {
+        "application": 2,
+        "framework": 2,
+        "kernel_driver": 1,
+        "protocol": 1,
+        "library": 2,
+        "spec_standard": 1,
+        "service": 1
+      },
+      "threat_model": {
+        "physical_access_attacker": 1,
+        "compromised_endpoint": 2,
+        "passive_network_observer": 1,
+        "supply_chain_attacker": 2,
+        "active_mitm": 1,
+        "targeted_surveillance": 1,
+        "malicious_client": 1,
+        "insider": 1,
+        "malicious_server": 1
+      },
+      "novelty_axis": {
+        "platform": 2,
+        "combination": 2,
+        "category": 2,
+        "architecture": 2,
+        "class": 2
+      }
+    },
+    "run_minimums": {
+      "min_distinct_stacks": {
+        "actual": 7,
+        "required": 5,
+        "status": "ok"
+      },
+      "min_distinct_threat_models": {
+        "actual": 9,
+        "required": 3,
+        "status": "ok"
+      },
+      "min_distinct_layers": {
+        "actual": 7,
+        "required": 4,
+        "status": "ok"
+      }
+    },
+    "reconciliation": [
+      "scale: strict cap infeasible (4 values); balanced cap ceil(n/values) = 3 applied"
+    ]
+  },
+  "rolling_window": {
+    "window_size": 15,
+    "uncovered_values": {
+      "platform": [
+        "ide_extension",
+        "editor_plugin",
+        "cloud_service",
+        "edge_runtime",
+        "iot",
+        "smart_tv",
+        "automotive",
+        "robotics",
+        "ar_vr_xr",
+        "game_console",
+        "bootloader",
+        "firmware",
+        "wasm_module"
+      ],
+      "software_class": [
+        "library",
+        "microservice",
+        "monolith",
+        "plugin",
+        "transpiler",
+        "formatter",
+        "package_manager",
+        "database",
+        "cache",
+        "queue",
+        "orchestrator",
+        "runtime",
+        "emulator",
+        "simulator",
+        "game",
+        "dev_tool",
+        "test_harness",
+        "fuzzer",
+        "debugger",
+        "observability_agent",
+        "ml_model",
+        "ml_pipeline",
+        "autonomous_agent",
+        "scraper",
+        "crawler",
+        "dapp",
+        "smart_contract",
+        "mesh_node",
+        "cryptographic_primitive",
+        "consensus_module",
+        "identity_system",
+        "payment_rail",
+        "filesystem",
+        "network_stack",
+        "build_system",
+        "ci_cd_component"
+      ],
+      "solution_category": [
+        "automation",
+        "security",
+        "privacy",
+        "anonymity",
+        "data_leak_prevention",
+        "ai_egress_control",
+        "content_moderation",
+        "media_processing",
+        "generative_tooling",
+        "research_tooling",
+        "scientific_computing",
+        "health",
+        "finance",
+        "commerce",
+        "logistics",
+        "governance",
+        "legal_tech",
+        "resilience_backup",
+        "offline_first",
+        "low_resource_edge_compute",
+        "creative_tools",
+        "gaming",
+        "simulation"
+      ],
+      "architecture": [
+        "multi_tenant_saas",
+        "self_hosted",
+        "decentralized",
+        "stream_processing",
+        "protocol_first",
+        "hardware_paired"
+      ],
+      "scale": [],
+      "language": [
+        "cpp",
+        "zig",
+        "java",
+        "scala",
+        "ruby",
+        "php",
+        "lua",
+        "node",
+        "deno",
+        "bun",
+        "haskell",
+        "clojure",
+        "kotlin_android",
+        "dart",
+        "sql",
+        "r_lang",
+        "julia",
+        "fortran",
+        "matlab",
+        "solidity",
+        "move",
+        "bash",
+        "posix_shell",
+        "other"
+      ],
+      "stack": [
+        "data",
+        "scientific",
+        "blockchain",
+        "shell",
+        "other"
+      ],
+      "layer": [
+        "firmware",
+        "research_prototype"
+      ],
+      "threat_model": []
+    },
+    "status": "non_compliant",
+    "justification": "corpus_size=15 is far below the combined vocabulary of the matrices (hundreds of values), so a 15-idea window necessarily leaves most values uncovered; the coverage frontier is tracked in cells.top_under_represented and future runs bias slots toward it."
+  },
+  "push_results": null
+}

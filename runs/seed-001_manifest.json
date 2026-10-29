@@ -373,5 +373,34 @@
     },
     "status": "non_compliant"
   },
-  "push_results": null
+  "push_results": {
+    "at": "2026-10-29T17:15:42Z",
+    "git": {
+      "commit": "swarm: run seed-001 — 5 ideas (corpus 5)",
+      "branch": "main",
+      "sha": "aa506bb55e1ab04913eeb1dd6f21643b7ebe2aa7",
+      "github": {
+        "pushed": false,
+        "detail": "git push github HEAD failed: remote: Permission to openxcraft/idea.git denied to openxcraft.\nfatal: unable to access 'https://github.com/openxcraft/idea.git/': The requested URL returned error: 403"
+      },
+      "gitlab": {
+        "pushed": false,
+        "detail": "git push gitlab HEAD failed: remote: You are not allowed to upload code.\nfatal: unable to access 'https://gitlab.com/wellonn/idea.git/': The requested URL returned error: 403"
+      },
+      "links": {
+        "github_commit": "https://github.com/openxcraft/idea/commit/aa506bb55e1ab04913eeb1dd6f21643b7ebe2aa7",
+        "gitlab_commit": "https://gitlab.com/wellonn/idea/-/commit/aa506bb55e1ab04913eeb1dd6f21643b7ebe2aa7",
+        "github_repo": "https://github.com/openxcraft/idea",
+        "gitlab_repo": "https://gitlab.com/wellonn/idea"
+      }
+    },
+    "discord": {
+      "status": "ok",
+      "detail": "1/1 chunks delivered"
+    },
+    "telegram": {
+      "status": "ok",
+      "detail": "1/1 chunks delivered"
+    }
+  }
 }

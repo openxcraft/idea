@@ -1,0 +1,92 @@
+name: Validate idea corpus
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "ideas.jsonl"
+      - "ideas/**"
+      - "schema/**"
+      - ".github/workflows/validate-corpus.yml"
+  pull_request:
+    paths:
+      - "ideas.jsonl"
+      - "ideas/**"
+      - "schema/**"
+      - ".github/workflows/validate-corpus.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: corpus-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  validate:
+    name: Validate JSONL index
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+
+      - name: Validate index entries and referenced idea files
+        run: |
+          python - <<'PY'
+          import json
+          import re
+          from pathlib import Path
+
+          index_path = Path("ideas.jsonl")
+          schema_path = Path("schema/idea_frontmatter.schema.json")
+          ideas_dir = Path("ideas")
+
+          json.loads(schema_path.read_text(encoding="utf-8"))
+          required = {
+              "id", "title", "slug", "summary", "path", "hash", "platform",
+              "software_class", "solution_category", "architecture", "scale",
+              "language", "stack", "layer", "threat_model", "novelty_axis",
+              "from_scratch", "dependency_declared", "tags", "cell",
+              "created_at", "run_id",
+          }
+          seen = {"id": set(), "slug": set(), "path": set()}
+          count = 0
+
+          for line_number, raw in enumerate(index_path.read_text(encoding="utf-8").splitlines(), 1):
+              if not raw.strip():
+                  continue
+              try:
+                  entry = json.loads(raw)
+              except json.JSONDecodeError as exc:
+                  raise SystemExit(f"{index_path}:{line_number}: invalid JSON: {exc}") from exc
+
+              if not isinstance(entry, dict):
+                  raise SystemExit(f"{index_path}:{line_number}: entry must be an object")
+              missing = sorted(required - entry.keys())
+              if missing:
+                  raise SystemExit(f"{index_path}:{line_number}: missing fields: {', '.join(missing)}")
+
+              for key in seen:
+                  value = entry[key]
+                  if not isinstance(value, str) or not value:
+                      raise SystemExit(f"{index_path}:{line_number}: {key} must be a non-empty string")
+                  if value in seen[key]:
+                      raise SystemExit(f"{index_path}:{line_number}: duplicate {key}: {value}")
+                  seen[key].add(value)
+
+              relative = Path(entry["path"])
+              if relative.is_absolute() or ".." in relative.parts:
+                  raise SystemExit(f"{index_path}:{line_number}: unsafe idea path: {entry['path']}")
+              if not (ideas_dir / relative).is_file():
+                  raise SystemExit(f"{index_path}:{line_number}: referenced idea file missing: {entry['path']}")
+              if not re.fullmatch(r"[0-9a-f]{64}", str(entry["hash"])):
+                  raise SystemExit(f"{index_path}:{line_number}: hash must be a 64-character lowercase SHA-256")
+              if not isinstance(entry["tags"], list) or not isinstance(entry["threat_model"], list):
+                  raise SystemExit(f"{index_path}:{line_number}: tags and threat_model must be arrays")
+              count += 1
+
+          print(f"Validated {count} index entries, unique IDs/slugs/paths, schema JSON, and referenced idea files.")
+          PY
